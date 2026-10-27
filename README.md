@@ -63,17 +63,36 @@ Expected output includes `PASS` and `Baseline=48 km; optimized=43 km; reduction=
 Formula: `(baseline km - optimized km) / baseline km × 100`. With sample data: `(48 - 43) / 48 × 100 = 10.42%`.
 
 ## Project structure
+
 ```text
-src/main/java/com/logismart/  Java HTTP server and optimization logic
- data/                         Synthetic CSV input files
- tests/SelfTest.java            Dependency-free regression checks
- docs/                          Architecture and test notes
- evidence/                       Folder reserved for genuine screenshots captured by the student
- Dockerfile                      Container build/run definition
+smart-delivery-route-optimization/
+├── src/
+│   └── main/java/com/logismart/
+│       ├── App.java
+│       └── DeliveryOptimizer.java
+├── data/
+│   ├── Delivery_Orders_Sample.csv
+│   ├── Vehicle_Master_Sample.csv
+│   └── Zone_Distance_Matrix_Sample.csv
+├── tests/
+│   └── SelfTest.java
+├── docs/
+│   ├── ARCHITECTURE.md
+│   └── TEST_REPORT.md
+├── evidence/
+│   ├── api-smoke-test-result.json
+│   └── core-regression-test-output.txt
+├── .gitignore
+├── Dockerfile
+└── README.md
 ```
+
+**Dataset note:** The included CSV files contain synthetic sample data created for demonstration because the original operational datasets were not provided.
+
+**Important:** The reported results (48 km baseline and 43 km optimized) are illustrative results from the synthetic dataset, not actual company operational results.
 
 ## Limitations
 - The nearest-neighbour heuristic does not guarantee a globally shortest route.
-- Synthetic sample data is small and must not be presented as official operational data.
+- Synthetic sample data is small and must not be presented as official operational data
 - No live traffic, time windows, persistence, authentication or production deployment is included.
 - The included container definition is a deployment recipe; it does not prove that the project has been deployed to a cloud provider.
