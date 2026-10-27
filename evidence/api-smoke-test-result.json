@@ -1,0 +1,1 @@
+{"orders":6,"allocated":6,"baselineKm":48,"optimizedKm":43,"reductionPercent":10.42,"plans":[{"vehicle":"V1","load":7,"capacity":7,"baselineRoute":"B → C → D","optimizedRoute":"B → C → D","baselineKm":19,"optimizedKm":19},{"vehicle":"V2","load":7,"capacity":8,"baselineRoute":"E → F → G","optimizedRoute":"F → E → G","baselineKm":29,"optimizedKm":24}],"warnings":[]}
