@@ -1,0 +1,7 @@
+Order_ID,Destination_Zone,Load_Units,Priority,Vehicle_Type_Required
+O101,B,2,High,Van
+O102,C,3,High,Van
+O103,D,2,Medium,Van
+O104,E,3,Medium,Van
+O105,F,2,Low,Van
+O106,G,2,Low,Van

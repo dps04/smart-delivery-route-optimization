@@ -1,0 +1,2 @@
+PASS: sample order count, allocation, capacity, route totals, reduction and warnings.
+Baseline=48 km; optimized=43 km; reduction=10.42%
